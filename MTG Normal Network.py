@@ -153,10 +153,26 @@ print("Welcome to the Magic Normal Network!")
 	#triDict[num] = triDict.get(num, 0) + 1
 #print(triDict)
 
-while True:
-	testCard = generateCard()
-	testCard.train()
-#load_dicts()
-#for x in range(0,10):
+#while True:
 #	testCard = generateCard()
-#	print("\n" + testCard.toString())
+#	testCard.train()
+load_dicts()
+for x in range(0,10):
+	testCard = generateCard()
+	print("\n" + testCard.toString())
+
+
+# Saima's stuff
+# weights = [x1,x2, ...]
+
+
+# Manaboon Sorceress
+
+# Creature - Human Wizard
+# {T}: Add GG to your mana pool.
+# 3/2
+
+# evaluate(manaboonsorceress)
+
+# basescore = weights[threepower]*1 + weights[twotoughness]*1 + weights[tapsfor2mana]*1 + ...
+# twofactorscore = weights[threetwo]*(weights[threepower] + weights[twotoughness]) + weights[threepowtapsfortwo](weights[threepower] + weights[tapsfortwo]) + ...
